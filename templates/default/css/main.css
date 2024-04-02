@@ -143,12 +143,12 @@ header .heder-center svg path {
   transition: 0.15s ease-in-out;
 }
 header .heder-center .form-control {
-  height: 40px;
-  width: 670px;
+  height: 50px;
+  width: 960px;
   font-size: inherit;
   border-radius: 50px;
   box-shadow: none;
-  padding: 5px 10px 5px 20px;
+  padding: 10px 10px 10px 20px;
 }
 header .heder-center .form-control::-moz-placeholder {
   color: #757575;
