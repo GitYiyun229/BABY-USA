@@ -76,7 +76,7 @@
 // }
 
 $db_info = array(
-    'dbName' => 'shopusa',
+    'dbName' => 'babyusa',
     'dbUser' => 'root',
     'dbPass' => 'root',
     'dbHost' => 'localhost'
