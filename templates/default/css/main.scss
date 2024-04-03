@@ -61,8 +61,9 @@ body {
 }
 
 .header-top {
-  border-bottom: 1px solid #f4f4f4;
+  // border-bottom: 1px solid #f4f4f4;
   color: #757575;
+  background-color: #fff100;
   .container {
     height: 32px;
   }
@@ -118,7 +119,8 @@ header {
   top: 0;
   z-index: 1000;
   .header-container {
-    height: 70px;
+    height: 80px;
+    padding-bottom: 10px;
   }
   .img-logo {
     width: 142.5px;
@@ -298,6 +300,21 @@ header {
   }
 }
 
+.section-top .banner-carousel .owl-dots button.owl-dot.active {
+  span {
+    width: 40px;
+    background: #f8a91e !important;
+  }
+}
+.section-top .banner-carousel .owl-dots button.owl-dot {
+  span {
+    width: 10px;
+    height: 10px;
+    background: #f8a91e !important;
+    margin: 0 0.35rem;
+  }
+}
+
 footer {
   .container {
     border-radius: 4px;
@@ -307,7 +324,7 @@ footer {
     border-bottom: 1px solid #f4f4f4;
     gap: 30px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     color: #666666;
     .title {
       color: #3b3b3b;

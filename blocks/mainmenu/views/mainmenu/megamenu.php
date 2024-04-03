@@ -1,7 +1,6 @@
 <?php
 global $tmpl;
 $tmpl->addStylesheet('styles', 'blocks/mainmenu/assets/css');
-$lang = FSInput::get('lang');
 $Itemid = FSInput::get('Itemid');
 ?>
 <?php $i = 0; ?>
@@ -18,7 +17,6 @@ $Itemid = FSInput::get('Itemid');
                 <?php
                 $childrens = isset($children[$item->id]) && count($children[$item->id]) ? 1 : 0;
                 ?>
-
                 <li class="<?php echo $class; ?> <?php echo $children ? 'menu_hover' : '' ?> nav-item nav-items ">
                     <a href="<?php echo $link; ?> " class="nav-link" target="<?php echo $target; ?>" >
                         <?php echo $item->name; ?>
@@ -26,8 +24,7 @@ $Itemid = FSInput::get('Itemid');
 <!--                            <i class="fa fa-angle-down" data-toggle="dropdown"></i>-->
                         <?php } ?>
                     </a>
-
-                    <!--	LEVEL 1			-->
+                    <!--	LEVEL 1	    -->
                     <?php if ($childrens) { ?>
                     <ul class="dropdown-menu border-box">
                         <?php } ?>
@@ -40,7 +37,6 @@ $Itemid = FSInput::get('Itemid');
                                        id="menu_item_<?php echo $child->id; ?>">
                                         <?php echo $child->name; ?>
                                     </a>
-
                                     <!--	LEVEL 3			-->
                                     <?php if (isset($children[$child->id]) && count($children[$child->id])){ ?>
                                     <i class="fa fa-angle-right" data-toggle="dropdown"></i>
@@ -61,7 +57,6 @@ $Itemid = FSInput::get('Itemid');
                                     </ul>
                                     <?php } ?>
                                     <!--	end LEVEL 3			-->
-
                                 </li>
                                 <?php $j++; ?>
                             <?php } ?>

@@ -62,8 +62,8 @@ body .font-size-16 {
 }
 
 .header-top {
-  border-bottom: 1px solid #f4f4f4;
   color: #757575;
+  background-color: #fff100;
 }
 .header-top .container {
   height: 32px;
@@ -117,7 +117,8 @@ header {
   z-index: 1000;
 }
 header .header-container {
-  height: 70px;
+  height: 80px;
+  padding-bottom: 10px;
 }
 header .img-logo {
   width: 142.5px;
@@ -287,6 +288,18 @@ header .cart-session .cart-session-right p {
   line-height: normal;
 }
 
+.section-top .banner-carousel .owl-dots button.owl-dot.active span {
+  width: 40px;
+  background: #f8a91e !important;
+}
+
+.section-top .banner-carousel .owl-dots button.owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: #f8a91e !important;
+  margin: 0 0.35rem;
+}
+
 footer .container {
   border-radius: 4px;
 }
@@ -295,7 +308,7 @@ footer .footer-top {
   border-bottom: 1px solid #f4f4f4;
   gap: 30px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   color: #666666;
 }
 footer .footer-top .title {

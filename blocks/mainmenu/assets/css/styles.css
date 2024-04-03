@@ -3,6 +3,9 @@
   text-align: center;
 }
 
+.nav-main {
+  padding: 0 0 0 2rem;
+}
 .nav-main .menu_hed .nav.nav_1 {
   text-align: left;
   /*float: right;*/
@@ -43,6 +46,7 @@
 
 .nav-main .menu_hed .nav .nav-item {
   padding: 0 20px;
+  transition: all 0.3s;
 }
 
 .nav-main .menu_hed .nav .nav-item .nav-link {
@@ -125,6 +129,7 @@
 
 .nav-main .menu_hed .nav .nav-item:hover > a {
   /*color: #fff;*/
+  font-weight: 700;
   background: none;
   color: #104345;
 }
@@ -160,7 +165,7 @@
   border-radius: 5px;
   width: 275px;
   padding: 0px;
-  background: #3E6768;
+  background: #fff;
   overflow: hidden;
 }
 
@@ -171,7 +176,7 @@
 .nav-main .menu_hed .nav .nav-item:hover > .dropdown-menu li > a {
   display: block;
   padding: 14px 20px;
-  color: #fff;
+  color: #614300;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: normal;
@@ -189,8 +194,8 @@
 }
 
 .nav-main .menu_hed .nav .nav-item:hover > .dropdown-menu li:hover > a {
-  background-color: #FEC340;
-  color: #104345;
+  background-color: #f8a91e;
+  color: #fff;
 }
 
 .nav-main .menu_hed .nav .nav-item:hover > .dropdown-menu li:hover > a .fa {
@@ -213,7 +218,8 @@
   margin-top: -5px;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 {
   display: none;
   margin-top: 0;
   border-top: 0px;
@@ -225,17 +231,20 @@
   background: #fff;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li {
   padding: 0px 0px;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li > a, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li > a {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li > a,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li > a {
   display: block;
   padding: 10px 10px;
   color: #333;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li .fa, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li .fa {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li .fa,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li .fa {
   position: absolute;
   right: 0px;
   padding: 0px 5px;
@@ -244,24 +253,29 @@
   color: #333;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:last-child > a, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:last-child > a {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:last-child > a,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:last-child > a {
   border-bottom: 0px;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > a, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > a {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > a,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > a {
   background-color: #49b14d;
   color: #fff;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > a .fa, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > a .fa {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > a .fa,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > a .fa {
   color: #fff;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover .fa, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover .fa {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover .fa,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover .fa {
   color: #fff;
 }
 
-.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > .lv-4, .nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > .lv-4 {
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .dropdown-menu li:hover > .lv-4,
+.nav-main .menu_hed .nav .nav-item li.dropdown-submenu .lv-4 li:hover > .lv-4 {
   display: block;
   border-top: 0px;
   border-radius: 0px;

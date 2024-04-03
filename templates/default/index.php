@@ -37,11 +37,11 @@ $alert = array(
     <div id="app">
         <input type="hidden" id="alert_member" value='<?php echo json_encode($alert) ?>' />
         <header class="bg-white">
-            <div class="container header-container d-flex align-items-center gap-5">
+            <div class="container header-container d-flex align-items-center gap-5 justify-content-between">
                 <a href="<?php echo URL_ROOT ?>" title="<?php echo $config['site_name'] ?>">
                     <img src="<?php echo URL_ROOT . $config['logo'] ?>" width="100" height="48.5" alt="<?php echo $config['site_name'] ?>" class="img-fluid img-logo">
                 </a>
-                <div class="header-top bg-white">
+                <div class="header-top ">
                     <?= $tmpl->load_direct_blocks('mainmenu', ['style' => 'megamenu', 'group' => '1']) ?>
                 </div>
             </div>
@@ -125,26 +125,44 @@ $alert = array(
         <footer>
             <div class="container bg-white">
                 <div class="footer-top">
+
                     <div class="item">
-                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Hỗ trợ khách hàng') ?></p>
-                        <?php echo $tmpl->load_direct_blocks('mainmenu', ['style' => 'footer', 'group' => '2']); ?>
+                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Công Ty TNHH Dược Phẩm BabyUSA') ?></p>
+                        <div>Hotline:
+                            <a href="tel:<?php echo $config['hotline'] ?>"><b><?php echo $config['hotline'] ?></b></a>
+                            <br> (1000đ/phút, 8-21h kể cả T7, CN)
+                        </div>
                     </div>
                     <div class="item">
-                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Về chúng tôi') ?></p>
-                        <?php echo $tmpl->load_direct_blocks('mainmenu', ['style' => 'footer', 'group' => '3']); ?>
-                        <p class="fw-semibold fs-6 mb-2 mt-4 title"><?php echo FSText::_('Tổng đài hỗ trợ') ?></p>
-                        <div>Hotline: <a href="tel:<?php echo $config['hotline'] ?>"><b><?php echo $config['hotline'] ?></b></a> <br> (1000đ/phút, 8-21h kể cả T7, CN)</div>
+                        <div>
+                            <div class="item">
+
+                                <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Về BabyUSA') ?></p>
+                                <?php echo $tmpl->load_direct_blocks('mainmenu', ['style' => 'footer', 'group' => '3']); ?>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Hỗ trợ khách hàng') ?></p>
+                            <?php echo $tmpl->load_direct_blocks('mainmenu', ['style' => 'footer', 'group' => '2']); ?>
+                        </div>
+
                     </div>
-                    <div class="item">
-                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Phương thức thanh toán') ?></p>
-                        <img src="<?php echo URL_ROOT ?>images/phuong-thuc-thanh-toan.svg" alt="<?php echo FSText::_('Phương thức thanh toán') ?>" class="img-responsive">
+                    <div class="item ">
+                        <div>
+                            <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Phương thức thanh toán') ?></p>
+                            <img src="<?php echo URL_ROOT ?>images/phuong-thuc-thanh-toan.svg" alt="<?php echo FSText::_('Phương thức thanh toán') ?>" class="img-responsive">
+                        </div>
+                        <div class="mt-4 mw-100">
+                            <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Đối tác vận chuyển') ?></p>
+                            <img src="<?php echo URL_ROOT ?>images/doi-tac-van-chuyen.svg" alt="Chứng nhận" class="img-fluid">
+                            <a href="#">
+                                <img src="<?php echo URL_ROOT ?>images/bo-cong-thuong.svg" alt="bo-cong-thuong">
+                            </a>
+                        </div>
                     </div>
+
                     <div class="item">
-                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Chứng nhận') ?></p>
-                        <img src="<?php echo URL_ROOT ?>images/chung-nhan.jpg" alt="Chứng nhận" class="img-fluid">
-                    </div>
-                    <div class="item">
-                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Kết nối với chúng tôi') ?></p>
+                        <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Tải Ứng Dụng Nhận Ngay Nhiều Ưu đãi Đãi Hấp Dẫn Dành Cho Ba Mẹ') ?></p>
                         <div class="mb-2">
                             <a href="<?php echo $config['facebook'] ?>" title="Facebook" class="d-inline-flex align-items-center gap-2">
                                 <img src="<?php echo URL_ROOT ?>images/facebook-circle-icon.svg" alt="Facebook" class="img-fluid">

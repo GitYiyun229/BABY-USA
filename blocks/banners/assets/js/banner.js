@@ -10,11 +10,12 @@ $(document).ready(function () {
     margin: 0,
     loop: true,
     nav: true,
-    dots: false,
+    dots: true,
     autoplay: true,
     items: 1,
     autoplayHoverPause: true,
-  })
+    dotsEach: 1,
+  });
 
   $(".owl-prev").click(function(){
     onHover = 0;
