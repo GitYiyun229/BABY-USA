@@ -128,9 +128,12 @@ $alert = array(
 
                     <div class="item">
                         <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Công Ty TNHH Dược Phẩm BabyUSA') ?></p>
-                        <div>Hotline:
-                            <a href="tel:<?php echo $config['hotline'] ?>"><b><?php echo $config['hotline'] ?></b></a>
-                            <br> (1000đ/phút, 8-21h kể cả T7, CN)
+                        <div>Văn phòng: 154-156 Khánh Hội, phường 06, quận 04, Tp. HCM
+                            <br>
+                            <p class="pt-1"></p>
+                            <a href="tel:<?php echo $config['hotline'] ?>"><b>Điện thoại: <?php echo $config['hotline'] ?></b></a>
+
+                            <br> MST: 0311823461
                         </div>
                     </div>
                     <div class="item">
@@ -164,29 +167,26 @@ $alert = array(
                     <div class="item">
                         <p class="fw-semibold fs-6 mb-2 title"><?php echo FSText::_('Tải Ứng Dụng Nhận Ngay Nhiều Ưu đãi Đãi Hấp Dẫn Dành Cho Ba Mẹ') ?></p>
                         <div class="mb-2">
-                            <a href="<?php echo $config['facebook'] ?>" title="Facebook" class="d-inline-flex align-items-center gap-2">
-                                <img src="<?php echo URL_ROOT ?>images/facebook-circle-icon.svg" alt="Facebook" class="img-fluid">
-                                Fanpage
+                            <a href="<?php echo $config['facebook'] ?>" title="app" class="d-inline-flex align-items-center gap-2">
+                                <img src="<?php echo URL_ROOT ?>images/image-app1.png" alt="app" class="img-fluid">
+
                             </a>
                         </div>
-                        <div class="mb-2">
-                            <a href="<?php echo $config['shopee'] ?>" title="Shopee" class="d-inline-flex align-items-center gap-2">
-                                <img src="<?php echo URL_ROOT ?>images/shopee-circle-icon.svg" alt="Shopee" class="img-fluid">
+                        <div class="mb-2 d-flex align-items-center justify-content-between gap-2">
+                            <a href="<?php echo $config['facebook'] ?>" title="Facebook" class="d-inline-flex flex-column  align-items-center gap-2">
+                                <img src="<?php echo URL_ROOT ?>images/facebook-circle-icon.svg" alt="Facebook" class="img-fluid">
                                 Shopee
                             </a>
-                        </div>
-                        <div class="mb-2">
-                            <a href="<?php echo $config['tiktok'] ?>" title="Tiktok" class="d-inline-flex align-items-center gap-2">
+                            <a href="<?php echo $config['tiktok'] ?>" title="Tiktok" class="d-inline-flex flex-column align-items-center gap-2">
                                 <img src="<?php echo URL_ROOT ?>images/tiktok-circle-icon.svg" alt="Tiktok" class="img-fluid">
                                 Tiktok
                             </a>
-                        </div>
-                        <div class="mb-2">
-                            <a href="<?php echo $config['youtube'] ?>" title="Youtube" class="d-inline-flex align-items-center gap-2">
+                            <a href="<?php echo $config['youtube'] ?>" title="Youtube" class="d-inline-flex flex-column align-items-center gap-2">
                                 <img src="<?php echo URL_ROOT ?>images/youtube-circle-icon.svg" alt="Youtube" class="img-fluid">
                                 Youtube
                             </a>
                         </div>
+
                     </div>
                 </div>
                 <div class="footer-bottom text-center">

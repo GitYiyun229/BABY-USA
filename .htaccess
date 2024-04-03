@@ -29,6 +29,11 @@ ErrorDocument 404 /404.html
 #RewriteRule ^([^/]*)/amp/([^/]*)-n([0-9]*)$ index.php?module=news&view=amp_news&acode=$1&code=$2&id=$3&Itemid=50 [L]
 #RewriteRule ^amp/([^/]*)-p([0-9]*).html$ index.php?module=products&view=amp_product&code=$1&id=$2&Itemid=50 [L]
 
+#new
+RewriteRule ^([^/]*)-nc([0-9]*).html(.*) index.php?module=news&view=news&code=$1&id=$2&Itemid=2&lang=vi&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)-n([0-9]*).html(.*) index.php?module=news&view=cat&code=$1&id=$2&Itemid=3&lang=vi&%{QUERY_STRING} [L]
+RewriteRule ^blogs/all(.*)$ index.php?module=news&view=home&Itemid=23&lang=vi&$1&%{QUERY_STRING} [L]
+
 #product
 RewriteRule ^([^/]*)-pc([0-9]*).html(.*) index.php?module=products&view=cat&code=$1&id=$2&Itemid=2&lang=vi&%{QUERY_STRING} [L]
 RewriteRule ^([^/]*)-p([0-9]*).html(.*) index.php?module=products&view=product&code=$1&id=$2&Itemid=3&lang=vi&%{QUERY_STRING} [L]
